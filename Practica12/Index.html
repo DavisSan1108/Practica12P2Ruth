@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamiento para Autos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estacionamiento Inteligente</h1>
+
+        <div class="controls">
+            <div class="entrada-auto">
+                <h3>Registrar Entrada</h3>
+                <input type="text" id="placas" placeholder="Placas del auto">
+                <input type="text" id="propietario" placeholder="Nombre del propietario">
+                <button onclick="entradaAuto()">Registrar</button>
+            </div>
+
+            <div class="salida-auto">
+                <h3>Salida de Vehículo</h3>
+                <button onclick="salidaAuto()">Retirar</button>
+            </div>
+        </div>
+
+        <div id="log"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego Pintar Coches</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Juego Pintar Coches</h1>
+    <div class="game-container">
+      <div id="carQueue" class="car-queue">
+        <!-- Los coches se agregan aquí -->
+      </div>
+      <div class="palette">
+        <h3>Selecciona un color:</h3>
+        <!-- Colores actualizados -->
+        <div class="color-option" style="background-color: #FFA500;" data-color="Naranja"></div>
+        <div class="color-option" style="background-color: #FF0000;" data-color="Rojo"></div>
+        <div class="color-option" style="background-color: #008000;" data-color="Verde"></div>
+        <div class="color-option" style="background-color: #FFFF00;" data-color="Amarillo"></div>
+        <div class="color-option" style="background-color: #0000FF;" data-color="Azul"></div>
+        <div class="color-option" style="background-color: #FF00FF;" data-color="Rosa"></div>
+        <div class="color-option" style="background-color: #800080;" data-color="Morado"></div>
+        <div class="color-option" style="background-color: #00FFFF;" data-color="Cyan"></div>
+        <div class="color-option" style="background-color: #808080;" data-color="Gris"></div>
+        <div class="color-option" style="background-color: #8B4513;" data-color="Marrón"></div>
+      </div>
+    </div>
+    <button id="paintCar" class="btn">Pintar Coche</button>
+    <h3 id="record">Carros pintados: 0 | Tiempo: 0 segundos</h3>
+
+    <!-- Game Over overlay -->
+    <div id="gameOverOverlay" class="overlay" style="display:none;">
+      <div class="overlay-content">
+        <h2>Game Over</h2>
+        <p>Has alcanzado el límite de coches en fila.</p>
+        <button id="restartGame" class="btn">Reiniciar Juego</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
